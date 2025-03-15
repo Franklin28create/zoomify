@@ -1,6 +1,15 @@
 import Navbar from "@/components/Navbar";
 import Sidebar from "@/components/Sidebar";
+import { Metadata } from "next";
 import React, { ReactNode } from "react";
+
+export const metadata: Metadata = {
+  title: "Zoomify",
+  description: "Attend Meeting from anywhere in the world!",
+  icons: {
+    icon: "/images/zoomify-logo.jpg",
+  },
+};
 
 const HomeLayout = ({ children }: { children: ReactNode }) => {
   return (
